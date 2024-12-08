@@ -20,7 +20,7 @@ public class AverageHoursByMaritalStatus {
         job.setReducerClass(AverageReducer.class);
 
         job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(IntWritable.class);
+        job.setOutputValueClass(DoubleWritable.class);  // Output type should be DoubleWritable for averages
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));

@@ -22,6 +22,6 @@ public class AverageReducer
         }
         double average = (double) sum / count;
         result.set(average);
-        context.write(key, result);
+        context.write(key, result); // Writing average as DoubleWritable
     }
 }
