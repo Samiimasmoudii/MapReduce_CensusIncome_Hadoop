@@ -9,12 +9,12 @@ This project calculates the **average working hours per week** for individuals g
     - `AverageHoursByMaritalStatus.java`: Driver program to configure and run the MapReduce job.
 
 ## **Dataset**
-The input dataset is expected to be in CSV format with the following columns:
+
 - Marital status (e.g., "Married", "Single")
 - Hours worked per week (numeric field)
+- http://archive.ics.uci.edu/dataset/117/census+income+kdd
 
-**Example Input Data:**
-```csv
+
 id,age,gender,marital_status,occupation,hours_per_week,...
 1,25,Male,Single,Engineer,40,...
 2,30,Female,Married,Doctor,50,...
